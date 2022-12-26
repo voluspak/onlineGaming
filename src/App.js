@@ -1,22 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Class from './components/Class';
+import Function from './components/Function';
+import Formulario from './components/Formulario';
 
 function App() {
+const componenteClase = "Clase";
+const componenteFuncion = "Funcion";
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {/* <Class nombre={componenteClase}/> */}
+        <Function nombre={componenteFuncion}/>
+        <Formulario/>
       </header>
     </div>
   );
