@@ -1,19 +1,17 @@
 import './App.css';
-import Class from './components/Class';
-import Function from './components/Function';
-import Formulario from './components/Formulario';
+import NavBar from './components/NavBar';
+import ItemListContainer from './components/ItemListContainer';
 
 function App() {
-const componenteClase = "Clase";
-const componenteFuncion = "Funcion";
-
+let items = 1;
   return (
     <div className="App">
       <header className="App-header">
-        {/* <Class nombre={componenteClase}/> */}
-        <Function nombre={componenteFuncion}/>
-        <Formulario/>
+        <NavBar/>
       </header>
+      <main>
+        <ItemListContainer cart = {items}/>
+      </main>
     </div>
   );
 }
