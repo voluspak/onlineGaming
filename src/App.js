@@ -3,14 +3,13 @@ import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 function App() {
-let items = 1;
   return (
     <div className="App">
       <header className="App-header">
         <NavBar/>
       </header>
       <main>
-        <ItemListContainer cart = {items}/>
+        <ItemListContainer />
       </main>
     </div>
   );

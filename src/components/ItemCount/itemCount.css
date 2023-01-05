@@ -1,0 +1,17 @@
+.counter{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.controller{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.controller > button{
+    width: 1.5rem;
+    height: 1.5rem;
+}
