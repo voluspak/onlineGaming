@@ -1,6 +1,6 @@
-import "./estilos/burguerMenu.css"
+import "./burguerMenu.css"
 
-const MenuHabmurgusa = ({opcion}) =>{
+const MenuHamburguesa = ({opcion}) =>{
     switch (opcion) {
         case "categoria":
             return(
@@ -36,4 +36,4 @@ const MenuHabmurgusa = ({opcion}) =>{
     }
 }
 
-export default MenuHabmurgusa;
+export default MenuHamburguesa;

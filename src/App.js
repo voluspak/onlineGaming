@@ -1,7 +1,6 @@
 import './App.css';
-import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
-import Contador from './components/Contador';
+import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 function App() {
 let items = 1;
@@ -12,7 +11,6 @@ let items = 1;
       </header>
       <main>
         <ItemListContainer cart = {items}/>
-        <Contador/>
       </main>
     </div>
   );

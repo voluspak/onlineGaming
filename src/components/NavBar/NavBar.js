@@ -1,7 +1,6 @@
-import logo from "./assets/og-logo-alt.png"
-import "./estilos/navBar.css"
-import MenuHabmurgusa from "./BurguerMenu"
-import Carrito from "./CartWidget"
+import "./navBar.css"
+import MenuHabmurgusa from "../BurguerMenu/BurguerMenu"
+import Carrito from "../CartWidget/CartWidget"
 
 const NavBar = () =>{
     const opcionA = "categoria";
@@ -9,7 +8,7 @@ const NavBar = () =>{
     return(
         <nav className="navBar">
             <div className="logoContainer">
-                <img src={logo} className="logo"/>
+                <img src="./assets/og-logo-alt.png" className="logo"/>
             </div>
             <div className="navBarMenuContainer">
                 <ul className="navBarMenu">

@@ -1,4 +1,4 @@
-import "./estilos/itemListContainer.css"
+import "./itemListContainer.css"
 
 const ItemListContainer = ({cart})=>{
     if(cart == 0){

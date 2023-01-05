@@ -1,4 +1,4 @@
-import "./estilos/CartWidget.css"
+import "./CartWidget.css"
 
 const Carrito = () =>{
     return(
