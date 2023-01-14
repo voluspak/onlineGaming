@@ -1,0 +1,20 @@
+const productos = [ 
+    {
+        "id": "1",
+        "img": "https://cdn.akamai.steamstatic.com/steam/apps/730/capsule_616x353.jpg?t=1641233427",
+        "price": "Free to Play",
+        "title": "Counter-Strike: Global Offensive",
+        "category": "Accion",
+        "launchment": "21/8/2012",
+        "description": "Counter-Strike: Global Offensive (CS:GO) amplía el juego de acción por equipos del que fue pionero cuando salió hace más de 20 años",
+    },
+    {
+        "id": "2",
+        "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg?t=1671485009",
+        "price": "59.99",
+        "title": "Read Dead Redemption 2",
+        "category": "Accion",
+        "launchment": "5/12/2019",
+        "description": "Después de que un robo sale mal en la ciudad occ"id"ental de Blackwater, Arthur Morgan y la pandilla de Van der Linde se ven obligados a huir. Con agentes federales y los mejores cazarrecompensas de la nación pisándoles los talones, la pandilla debe robar, robar y abrirse camino a través del acc"id"entado corazón de Estados Un"id"os para sobrevivir."
+    }
+]
