@@ -10,12 +10,12 @@ const MenuHamburguesa = ({opcion}) =>{
                         <a href="#">Accion</a>
                         <a href="#">Aventura</a>
                         <a href="#">Carreras</a>
-                        <a href="#">Construcción</a>
                         <a href="#">Deportes</a>
                         <a href="#">Estrategia</a>
                         <a href="#">Shooter</a>
-                        <a href="#">Guerra</a>
                         <a href="#">Lucha</a>
+                        <a href="#">Rol</a>
+                        <a href="#">Supervivencia</a>
                     </div>
                 </div>
             )
