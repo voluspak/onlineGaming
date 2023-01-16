@@ -1,0 +1,33 @@
+.card{
+    width: 20rem;
+    height: 26rem;
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5%;
+    box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.486);
+}
+
+.imgContainer img{
+    width: 18rem;
+    height: 8.43rem;
+    border-radius: 5%;
+    box-shadow: 0 5px 18px 0 rgba(0, 0, 0, 0.486);
+}
+
+.bodyCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18rem;
+    height: 60%;
+    text-align: center;
+    background-color: rgb(238, 238, 238);
+    border-radius: 5%;
+}
+
+p{
+    font-size: 1rem;
+}
