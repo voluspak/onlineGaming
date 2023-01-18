@@ -5,3 +5,15 @@
     align-items: center;
     gap: 2rem;
 }
+
+.detailSeek{
+    text-decoration: none;
+    color: #000;
+    transition: all 500ms ease;
+    border-radius: 5%;
+}
+
+.detailSeek:hover{
+    transform: translateY(-.5rem);
+    box-shadow: 0 0 28px 0 rgba(0, 0, 0, 0.589);
+}

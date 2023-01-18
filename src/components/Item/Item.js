@@ -9,9 +9,11 @@ const Item = ({articulos}) => {
             </div>
             <div className="bodyCard">
                 <h3 className="title">{articulos.title}</h3>
-                <h4 className="category">{articulos.category}</h4>                
                 <p className="description">{articulos.description}</p>
-                <span>${articulos.price}</span>
+                <div className="lowerBodyCard">  
+                  <p className="category">{articulos.category}</p>                
+                  <span className="price">${articulos.price}</span>
+                </div>
             </div>
         </div>
     </>

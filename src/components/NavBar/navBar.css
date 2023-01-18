@@ -31,11 +31,15 @@
     justify-content: space-around;
 }
 
-.navBarMenu a{
+.inactive{
     text-decoration: none;
     color: #fff;
 }
 
-.navBarMenu a:hover{
+.inactive a:hover{
+    color: rgb(146, 22, 146);
+}
+
+.active{
     color: rgb(146, 22, 146);
 }

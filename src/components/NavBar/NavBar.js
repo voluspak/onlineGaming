@@ -1,21 +1,30 @@
 import "./navBar.css"
-import MenuHabmurgusa from "../BurguerMenu/BurguerMenu"
 import Carrito from "../CartWidget/CartWidget"
+import { NavLink } from "react-router-dom"
 
 const NavBar = () =>{
-    const opcionA = "categoria";
-    const opcionB = "requisitos";
     return(
         <nav className="navBar">
             <div className="logoContainer">
-                <img src="./assets/1.png" className="logo"/>
+                <img src="./assets/1.png" className="logo" alt="Logo"/>
             </div>
             <div className="navBarMenuContainer">
                 <ul className="navBarMenu">
-                    <li><a href="#">Incio</a></li>
-                    <li><MenuHabmurgusa opcion={opcionA}/></li>
-                    <li><MenuHabmurgusa opcion={opcionB}/></li>
-                    <li><a href="#">Ayuda</a></li>
+                    <li><NavLink className={({isActive})=> isActive? "active":"inactive"} to="/">
+                    Incio
+                    </NavLink></li>
+                    <li><NavLink className={({isActive})=> isActive? "active":"inactive"} to="/category/men's clothing">
+                    Hombre
+                    </NavLink></li>
+                    <li><NavLink className={({isActive})=> isActive? "active":"inactive"} to="/category/women's clothing">
+                    Mujer
+                    </NavLink></li>
+                    <li><NavLink className={({isActive})=> isActive? "active":"inactive"} to="/category/jewelery">
+                    Joyeria
+                    </NavLink></li>
+                    <li><NavLink className={({isActive})=> isActive? "active":"inactive"} to="/category/electronics">
+                    Electronica
+                    </NavLink></li>
                 </ul>
             </div>
             <Carrito/>

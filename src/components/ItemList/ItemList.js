@@ -6,7 +6,7 @@ const ItemList = ({productos}) => {
   return (
     <div className="cardsContainer">
       {productos.map((prod)=>(  
-        <Link key={prod.id} to={`item/${prod.id}`} >  
+        <Link key={prod.id} to={`item/${prod.id}`} className="detailSeek">  
           <Item articulos={prod}/>
         </Link>
       ))}

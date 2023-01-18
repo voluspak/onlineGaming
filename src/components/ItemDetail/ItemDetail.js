@@ -1,20 +1,20 @@
-import React from 'react'
+import "./itemDetail.css"
 
 const ItemDetail = ({detail}) => {
   return (
-    
-    <div className="card" key={detail.id}>
-        <div className="imgContainer">
-            <img alt={detail.title} src={detail.img}/>
-        </div>
-        <div className="bodyCard">
-            <h5 className="title">{detail.title}</h5>
-            <p className="category">Categoria: {detail.category}</p>                
-            <p className="description">{detail.description}</p>
-            <p className="launchment">Lanzamiento: {detail.launchment}</p>
-        </div>
+    <div className="card detailCard"  key={detail.id}>
+                  <div className="imgContainer">
+                <img alt={detail.title} src={detail.image}/>
+            </div>
+            <div className="bodyCard">
+                <h3 className="title">{detail.title}</h3>
+                <p className="description">{detail.description}</p>
+                <div className="lowerBodyCard">  
+                  <h4 className="category">{detail.category}</h4>                
+                  <span className="price">${detail.price}</span>
+                </div>
+            </div>
     </div>
-
   )
 }
 
