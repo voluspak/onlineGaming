@@ -8,7 +8,7 @@ const NavBar = () =>{
     return(
         <nav className="navBar">
             <div className="logoContainer">
-                <img src="./assets/og-logo-alt.png" className="logo"/>
+                <img src="./assets/1.png" className="logo"/>
             </div>
             <div className="navBarMenuContainer">
                 <ul className="navBarMenu">

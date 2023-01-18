@@ -3,21 +3,17 @@ import "./item.css"
 const Item = ({articulos}) => {
   return (
     <>
-        {
-            articulos.map((item)=>(
-                <div className="card" key={item.id}>
-                    <div className="imgContainer">
-                        <img alt={item.title} src={item.img}/>
-                    </div>
-                    <div className="bodyCard">
-                        <h5 className="title">{item.title}</h5>
-                        <p className="category">Categoria: {item.category}</p>                
-                        <p className="description">{item.description}</p>
-                        <p className="launchment">Lanzamiento: {item.launchment}</p>
-                    </div>
-                </div>
-            ))
-        }
+        <div className="card">
+            <div className="imgContainer">
+                <img alt={articulos.title} src={articulos.image}/>
+            </div>
+            <div className="bodyCard">
+                <h3 className="title">{articulos.title}</h3>
+                <h4 className="category">{articulos.category}</h4>                
+                <p className="description">{articulos.description}</p>
+                <span>${articulos.price}</span>
+            </div>
+        </div>
     </>
   )
 }
