@@ -1,12 +1,11 @@
 import "./itemDetail.css"
 import ItemCount from "../ItemCount/ItemCount"
 import { useState, useContext } from "react";
-import { cartContext } from "../../context/cartContext";
+import { CartContext } from "../../context/cartContext";
 
 const ItemDetail = ({detail}) => {
-  const { addToCart } = useContext(cartContext)
+  const { addToCart } = useContext(CartContext)
   const [contador, setContador] = useState(1);
-  let stock = 5;
   return (
     <div className="card detailCard"  key={detail.id}>
       <div className="imgContainer">
@@ -20,7 +19,7 @@ const ItemDetail = ({detail}) => {
           <span className="price">${detail.price}</span>
         </div>
       </div>
-      <ItemCount contador={contador} setContador={setContador} stock={stock} />
+      <ItemCount contador={contador} setContador={setContador} />
         <div>
           <button onClick={()=>addToCart(detail, contador)}>Agregar al carrito</button>
         </div>

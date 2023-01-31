@@ -5,9 +5,9 @@ import { NavLink } from "react-router-dom"
 const NavBar = () =>{
     return(
         <nav className="navBar">
-            <div className="logoContainer">
+            <NavLink className="logoContainer" to="/">
                 <img src="./assets/1.png" className="logo" alt="Logo"/>
-            </div>
+            </NavLink>
             <div className="navBarMenuContainer">
                 <ul className="navBarMenu">
                     <li><NavLink className={({isActive})=> isActive? "active":"inactive"} to="/">

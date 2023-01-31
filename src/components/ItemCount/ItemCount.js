@@ -1,21 +1,16 @@
 import "./itemCount.css"
 
-
-
 const ItemCount = ({contador, setContador, stock}) => {
     const onAdd = () =>{
-        if(contador === stock){
-            return
-    }else{
-        setContador(contador + 1);
-    }
+        return setContador(contador + 1);
+        
     }
     const restar = () =>{
         if(contador < 2 ){
            return
-        }else{
-        setContador(contador - 1);
         }
+        setContador(contador - 1);
+        
     }
   return (
     <div className='counter'>
