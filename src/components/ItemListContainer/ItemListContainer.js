@@ -1,7 +1,5 @@
 import "./itemListContainer.css"
-import ItemCount from "../ItemCount/ItemCount"
 import ItemList from "../ItemList/ItemList"
-import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer"
 import { useEffect,  useState } from "react"
 import { useParams } from "react-router-dom"
 
@@ -30,9 +28,7 @@ const ItemListContainer = ()=>{
 
     return(
         <div className="bienvenida">
-            <ItemCount />
             <ItemList productos={category? prodCat : products}/>
-            <ItemDetailContainer/>
         </div>
     )
 
