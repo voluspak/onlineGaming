@@ -1,6 +1,6 @@
 import "./itemCount.css"
 
-const ItemCount = ({contador, setContador, stock}) => {
+const ItemCount = ({contador, setContador}) => {
     const onAdd = () =>{
         return setContador(contador + 1);
         

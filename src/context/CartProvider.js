@@ -14,6 +14,7 @@ const CartProvider = ({ children }) => {
     } else {
       const newProd = {
         id: item.id,
+        img: item.image,
         name: item.title,
         price: item.price,
         category: item.category,
@@ -31,8 +32,9 @@ const CartProvider = ({ children }) => {
     setCart([...newCart]);
   };
 
+
   return (
-    <CartContext.Provider value={{cart, addToCart, clear, removeItem }}>
+    <CartContext.Provider value={{cart, addToCart, clear, removeItem}}>
       {children}
     </CartContext.Provider>
   );
