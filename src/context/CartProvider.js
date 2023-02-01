@@ -6,9 +6,8 @@ const CartProvider = ({ children }) => {
 
   const addToCart = (item, quantity) => {
     let prodID = item.id
-    console.log(prodID)
     let existe = cart.some((prod) => prod.id === prodID);
-    console.log(existe)
+
     if (existe) {
       let carrito = cart.find((prod)=> prod.id === prodID ? prod.quantity += quantity : prod.quantity)
       setCart([carrito])
@@ -22,7 +21,6 @@ const CartProvider = ({ children }) => {
       };
       setCart([...cart, newProd]);
     }
-    console.log(cart)
   };
 
   const clear = () => setCart([]);
@@ -34,7 +32,7 @@ const CartProvider = ({ children }) => {
   };
 
   return (
-    <CartContext.Provider value={{ addToCart, clear, removeItem }}>
+    <CartContext.Provider value={{cart, addToCart, clear, removeItem }}>
       {children}
     </CartContext.Provider>
   );

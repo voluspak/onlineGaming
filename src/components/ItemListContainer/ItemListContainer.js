@@ -2,10 +2,12 @@ import "./itemListContainer.css"
 import ItemList from "../ItemList/ItemList"
 import { useEffect,  useState } from "react"
 import { useParams } from "react-router-dom"
+import Loading from "../Loading/Loading"
 
 const ItemListContainer = ()=>{
     const [products, setProducts] = useState([]);
     const [prodCat, setProdCat] = useState([])
+    const [loading, setLoading] = useState(true)
     const {category} = useParams()
 
 
@@ -14,8 +16,12 @@ const ItemListContainer = ()=>{
     useEffect(()=>{
         getProducts
             .then(res=>res.json())
-            .then((response)=>setProducts(response))
+            .then((response)=>{
+                setLoading(false)
+                setProducts(response)
+            })
             .catch((error)=>console.error(error))
+            
     // eslint-disable-next-line react-hooks/exhaustive-deps
     },[ ])
 
@@ -28,7 +34,9 @@ const ItemListContainer = ()=>{
 
     return(
         <div className="bienvenida">
-            <ItemList productos={category? prodCat : products}/>
+            {loading === true 
+            ? <Loading/>
+            : <ItemList productos={category? prodCat : products}/>}
         </div>
     )
 
