@@ -9,7 +9,7 @@ const ItemDetail = ({detail}) => {
   return (
     <div className="card detailCard"  key={detail.id}>
       <div className="imgContainer">
-        <img alt={detail.title} src={detail.image}/>
+        <img alt={detail.title} src={detail.img}/>
       </div>
       <div className="bodyCard">
         <h3 className="title">{detail.title}</h3>

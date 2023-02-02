@@ -14,11 +14,14 @@ const CartProvider = ({ children }) => {
     } else {
       const newProd = {
         id: item.id,
-        img: item.image,
+        img: item.img,
         name: item.title,
         price: item.price,
         category: item.category,
         quantity: quantity,
+        description: item.description,
+        stock: item.stock,
+        launchment: item.launchment
       };
       setCart([...cart, newProd]);
     }

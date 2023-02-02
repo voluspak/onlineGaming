@@ -13,17 +13,23 @@ const NavBar = () =>{
                     <li><NavLink className={({isActive})=> isActive? "active":"inactive"} to="/">
                     Incio
                     </NavLink></li>
-                    <li><NavLink className={({isActive})=> isActive? "active":"inactive"} to="/category/men's clothing">
-                    Hombre
+                    <li><NavLink className={({isActive})=> isActive? "active":"inactive"} to="/category/accion">
+                    Accion
                     </NavLink></li>
-                    <li><NavLink className={({isActive})=> isActive? "active":"inactive"} to="/category/women's clothing">
-                    Mujer
+                    <li><NavLink className={({isActive})=> isActive? "active":"inactive"} to="/category/aventura">
+                    Aventura
                     </NavLink></li>
-                    <li><NavLink className={({isActive})=> isActive? "active":"inactive"} to="/category/jewelery">
-                    Joyeria
+                    <li><NavLink className={({isActive})=> isActive? "active":"inactive"} to="/category/carreras">
+                    Carreras
                     </NavLink></li>
-                    <li><NavLink className={({isActive})=> isActive? "active":"inactive"} to="/category/electronics">
-                    Electronica
+                    <li><NavLink className={({isActive})=> isActive? "active":"inactive"} to="/category/estrategia">
+                    Estrategia
+                    </NavLink></li>
+                    <li><NavLink className={({isActive})=> isActive? "active":"inactive"} to="/category/lucha">
+                    Lucha
+                    </NavLink></li>
+                    <li><NavLink className={({isActive})=> isActive? "active":"inactive"} to="/category/shooter">
+                    Shooter
                     </NavLink></li>
                 </ul>
             </div>

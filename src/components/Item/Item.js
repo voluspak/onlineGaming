@@ -5,7 +5,7 @@ const Item = ({articulos}) => {
     <>
         <div className="card">
             <div className="imgContainer">
-                <img alt={articulos.title} src={articulos.image}/>
+                <img alt={articulos.title} src={articulos.img}/>
             </div>
             <div className="bodyCard">
                 <h3 className="title">{articulos.title}</h3>

@@ -3,32 +3,40 @@ import ItemList from "../ItemList/ItemList"
 import { useEffect,  useState } from "react"
 import { useParams } from "react-router-dom"
 import Loading from "../Loading/Loading"
+import { collection, getFirestore, getDocs, where, query} from "firebase/firestore"
 
 const ItemListContainer = ()=>{
-    const [products, setProducts] = useState([]);
-    const [prodCat, setProdCat] = useState([])
+    const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
     const {category} = useParams()
 
 
-    const getProducts = fetch('https://fakestoreapi.com/products')
+    const getProducts = ()=>{
+        const dataBase = getFirestore()
+        const queryBase = collection(dataBase, "videojuegos")
+        const querySnapshot = category
+            ? query(queryBase, where("category", "==", category)) 
+            : queryBase
+ 
+        getDocs(querySnapshot)
+            .then((response)=>{
+                const data = response.docs.map((doc)=>{
+                    return {id: doc.id, ...doc.data()}
+                })
+                setLoading(false)
+                setProducts(data)
+            })
+                .catch(error=>console.log(error))
+    }
+    
 
     useEffect(()=>{
-        getProducts
-            .then(res=>res.json())
-            .then((response)=>{
-                setLoading(false)
-                setProducts(response)
-            })
-            .catch((error)=>console.error(error))
-            
+        getProducts()
     // eslint-disable-next-line react-hooks/exhaustive-deps
     },[ ])
 
     useEffect(()=>{
-        const noEspacios = category?.includes("%20") ? category.replace("%20"," ") : category
-        const filterProd = products.filter((product)=> product.category === noEspacios)
-        setProdCat(filterProd)
+        getProducts()
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [category])
 
@@ -36,7 +44,7 @@ const ItemListContainer = ()=>{
         <div className="bienvenida">
             {loading === true 
             ? <Loading/>
-            : <ItemList productos={category? prodCat : products}/>}
+            : <ItemList productos={products}/>}
         </div>
     )
 
