@@ -26,7 +26,7 @@ const ItemListContainer = ()=>{
                 setLoading(false)
                 setProducts(data)
             })
-                .catch(error=>console.log(error))
+            .catch(error=>console.log(error))
     }
     
 
@@ -47,9 +47,6 @@ const ItemListContainer = ()=>{
             : <ItemList productos={products}/>}
         </div>
     )
-
-    
-
 }
 
 export default ItemListContainer;

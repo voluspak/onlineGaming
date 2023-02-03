@@ -1,25 +1,15 @@
 .navBar{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 1rem;
-    height: 8rem;
 }
 
-.logoContainer{
-    height: 10rem;
-    width: 10rem;
-}
-
-
-.logo{
-    height: 6rem;
+.logoContainer, .logo{
     width: 6rem;
-    border-radius: 100%;
-    margin-top: 1.2rem;
-    margin-left: 2rem;
+    height: 3rem;
 }
+
 
 .navBarMenuContainer{
     width: 30rem;
@@ -30,6 +20,13 @@
     flex-flow: row wrap;
     justify-content: space-around;
 }
+
+.cartContainer,
+.navBarMenuContainer{
+    align-self: flex-end;
+}
+
+
 
 .inactive{
     text-decoration: none;

@@ -13,11 +13,13 @@ const Carrito = () =>{
         <div className="carritoBotonContainer">
             <button className="imgCart">
             🛒
-                <div className="contadorContainer">
-                    <span className="contador">
-                        {total}
-                    </span>
-                </div>
+                {total>0 &&
+                    <div className="contadorContainer ">
+                        <span className="contador">
+                            {total}
+                        </span>
+                    </div>
+                }
             </button>
         </div>
     )

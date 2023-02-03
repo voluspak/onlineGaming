@@ -1,0 +1,33 @@
+.emptyCartMessageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.61);
+}
+
+.emptyCartMessage{
+    background-color: #fff;
+    width: 50%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emptyCartMessage h2{
+    color: purple;
+    font-size: 2rem
+}
+
+.emptyCartMessage h4{
+    font-size: 1.5rem;
+}
+
+.emptyCartMessage a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}

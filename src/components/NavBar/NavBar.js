@@ -6,7 +6,7 @@ const NavBar = () =>{
     return(
         <nav className="navBar">
             <NavLink className="logoContainer" to="/">
-                <img src="./assets/1.png" className="logo" alt="Logo"/>
+                <img src="./assets/og-logo-alt2.png" className="logo" alt="Logo"/>
             </NavLink>
             <div className="navBarMenuContainer">
                 <ul className="navBarMenu">
@@ -33,7 +33,7 @@ const NavBar = () =>{
                     </NavLink></li>
                 </ul>
             </div>
-            <Link to="/cart">
+            <Link to="/cart" className="cartContainer">
                 <Carrito/>
             </Link>
             

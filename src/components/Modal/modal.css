@@ -1,0 +1,58 @@
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modalContainer{
+    width: 31.25rem;
+    height: 20rem;
+    min-height: 6.25rem;
+    background-color: #fff;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1.25rem;
+
+}
+
+.modalHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.modalCloseButton{
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #bb17dc;
+    transition: 300ms ease background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalCloseButton svg{
+    width: 80%;
+    height: 80%;
+}
+.modalCloseButton:hover{
+    background-color: #f2f2f2;
+}

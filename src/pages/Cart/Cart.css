@@ -1,0 +1,137 @@
+
+
+.cartCardContainer{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+
+}
+
+
+
+.cartCard{
+    width: 55rem;
+    height: 8.45rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.486);
+}
+
+.cartImgContainer img{
+    margin-top: 5px;
+    width: 18rem;
+    height: 8.43rem;
+    border-radius: 5% 0 0 5%;
+    outline: .1px solid rgba(0, 0, 0, 0.096);
+}
+
+.cartBodyCard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 35rem;
+    height: 8.45;
+    padding: 0 1rem;
+    text-align: center;
+    border-radius: 0 0 5% 5%;
+}
+
+.cartItems,
+.cartTotalIt,
+.cartArt,
+.cartCant,
+.cartUnid{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.cartTotalIt,
+.cartArt,
+.cartCant,
+.cartUnid{
+    width: 10%;
+}
+
+.cartRemoveButton{
+    border: none;
+    background-color: rgb(253, 33, 33);
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.cartRemoveButton:active{
+    background-color: rgba(253, 33, 33, 0.863);
+
+}
+
+.cartSelector{
+    position: fixed;
+    width: 80vw;
+    height: 3rem;
+    bottom: 1rem;
+    left: 6.8rem;
+    background-color: purple;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.cartSelector::after{
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 98%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.mountsDisplay,
+.buttonsContainer{
+    display: flex;
+    width: 49%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cartContinueButton{
+    border: none;
+    background-color: rgb(41, 180, 28);
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+.form input{
+    padding: 5px;
+}
+.form input:focus{
+    outline: 1px purple solid;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

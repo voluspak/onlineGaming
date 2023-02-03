@@ -8,10 +8,45 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 5px;
+
 }
 
-.controller > button{
+.controller>button{
+    background-color: rgb(138, 43, 226);
+    transition: 100ms ease background-color;
+    cursor: pointer;
+}
+.controller>button:active{
+    background-color: rgba(137, 43, 226, 0.473);
+
+}
+
+#mas{
+    border-radius: 0 50% 0 50%;
+}
+
+#menos{
+    border-radius: 50% 0 50% 0;
+}
+
+.controller > button,
+.numberInput{
     width: 1.5rem;
     height: 1.5rem;
+    border: none;
+
+}
+
+.numberInput::-webkit-inner-spin-button,
+.numberInput::-webkit-inner-outer-button{
+  -webkit-appearance: none; 
+  margin: 0; 
+
+}
+
+.numberInput{
+    text-align: center;
+}
+.numberInput:focus{
+    outline: none;
 }

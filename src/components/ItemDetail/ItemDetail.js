@@ -14,14 +14,15 @@ const ItemDetail = ({detail}) => {
       <div className="bodyCard">
         <h3 className="title">{detail.title}</h3>
         <p className="description">{detail.description}</p>
-        <div className="lowerBodyCard">  
-          <h4 className="category">{detail.category}</h4>                
+        <div className="lowerBodyCard">               
           <span className="price">${detail.price}</span>
+          <br/>
+            <span className="stockDetail">(Stock: {detail.stock})</span>
         </div>
       </div>
-      <ItemCount contador={contador} setContador={setContador} />
+      <ItemCount contador={contador} setContador={setContador} stock={detail.stock}/>
         <div>
-          <button onClick={()=>addToCart(detail, contador)}>Agregar al carrito</button>
+          <button className="addButton" onClick={()=>addToCart(detail, contador)} disabled={contador>detail.stock}>Agregar al carrito</button>
         </div>
     </div>
   )
